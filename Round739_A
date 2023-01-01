@@ -1,0 +1,34 @@
+#include<bits/stdc++.h>
+#define ll long long int
+#define vi                  vector<ll>
+#define f(i,n) for(int i=0;i<n;i++)
+#define ff(j,n) for(int j=1;j<n;j++)
+
+using namespace std;
+
+
+
+int main()
+{
+
+    int t;
+    cin >> t;
+
+    vector<ll>a;
+
+    for (int i = 1; i < 4000; i++)
+    {
+        if (i % 3 != 0 && ((i - 13) % 10 != 0))
+        {
+            a.push_back(i);
+        }
+    }
+    while (t--)
+    {
+        int n;
+        cin >> n;
+        cout << a[n - 1] << endl;
+    }
+
+}
+
